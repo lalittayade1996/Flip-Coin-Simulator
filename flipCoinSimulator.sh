@@ -2,7 +2,8 @@
 
 headcount=0
 tailcount=0
-while [ $headcount -lt 21 -a  $tailcount -lt 21 ]
+diff=0
+while [ $headcount -lt 21 -a  $tailcount -lt 21 -o $diff -lt 2 ]
 do 
 flip=$(( RANDOM%2 ))
 if [ $flip -eq 0 ]
